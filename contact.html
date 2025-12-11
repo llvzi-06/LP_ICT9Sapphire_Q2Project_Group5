@@ -16,7 +16,7 @@ rel="stylesheet">
 
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
         <div class="container-fluid">
-                <a class="navbar-brand" href="#"> <img src="1691567065-3230.jpg" alt="logo" height="50px" width="50px"></a>
+                <a class="navbar-brand" href="#"> <img src="1691567065-3230.jpg" class="rounded-circle" alt="logo" height="50px" width="50px"></a>
 
 
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynavbar">
@@ -53,29 +53,44 @@ rel="stylesheet">
         </div>
 
     </nav>
+    <div style="max-width: 700px; border-radius: 15px; padding: 1px; margin: auto; background-color: rgba(0, 0, 0, 0.3); color: white;">
     <h1>Contact Us</h1>
-    <p>If you have any questions, feel free to reach out to us!</p>
-
-
-    <div class="container mt-5" style="max-width: 600px;">
+    <p style="font-weight: 200;">If you have any questions, feel free to reach out to us!</p>
+    </div>
+<div class="row">
+ <div class="col">
+    <div class="container mt-5" style="max-width: 600px; margin: auto;">
         <form style="background-color: white; padding: 20px; border-radius: 10px;">
             <h2 style="text-align: center;">Contact Us</h2>
             <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" required>
+                <input type="text" placeholder="Type here..." class="form-control" id="name" required>
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" required>
+                <input type="email" placeholder="Type here..." class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="question" class="form-label">What is your question related to?</label>
+                <select class="form-select" id="question" required>
+                    <option value="">Select an option</option>
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="courses">Courses</option>
+                    <option value="enrollment">Enrollment</option>
+                    <option value="other">Other</option>
+                </select>
             </div>
             <div class="mb-3">
                 <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" rows="3" required></textarea>
+                <textarea class="form-control" placeholder="Type here..." id="message" rows="3" required></textarea>
             </div>
             <div class="text-center">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" placeholder="Type here..." class="btn btn-primary" style="width: 100%;">Submit</button>
             </div>
         </form>
+        </div>
+</div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
