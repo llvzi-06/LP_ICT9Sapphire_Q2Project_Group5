@@ -16,7 +16,7 @@ rel="stylesheet">
 
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
         <div class="container-fluid">
-                <a class="navbar-brand" href="#"> <img src="1691567065-3230.jpg" alt="logo" height="50px" width="50px"></a>
+                <a class="navbar-brand" href="#"> <img src="1691567065-3230.jpg" class="rounded-circle" alt="logo" height="50px" width="50px"></a>
 
 
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynavbar">
@@ -53,80 +53,96 @@ rel="stylesheet">
         </div>
 
     </nav>
+    <div style="max-width: 700px; border-radius: 15px; padding: 1px; margin: auto; background-color: rgba(0, 0, 0, 0.3); color: white;">
     <h1>Enroll Now!</h1>
     <div class="container mt-5">
-        <p>Welcome to our enrollment page! Join OB Montessori today and start your learning journey. Fill out the form below to enroll in our courses and gain access to expert instruction, hands-on projects, and social opportunities.</p>
+        <p style="font-weight: 200;">Welcome to our enrollment page! Join OB Montessori today and start your learning journey. Fill out the form below to enroll in our courses and gain access to expert instruction, hands-on projects, and social opportunities.</p>
     </div>
-    <br>
-    <br>
-    <div class="container-fluid mt-5" style="width: 100%; padding: 0;"></div>
-        <div class="row">
-            <div class="col-md-6">
-                <div style="background-color: beige; padding: 20px; border-radius: 10px; float: inline-start; width: 100%;">
-                    <h2>School Office Hours</h2>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Day</th>
-                                <th>Time</th>
-                                <th>Office</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Monday</td>
-                                <td>8:00 AM - 4:00 PM</td>
-                                <td>Registrar's Office</td>
-                            </tr>
-                            <tr>
-                                <td>Tuesday</td>
-                                <td>8:00 AM - 4:00 PM</td>
-                                <td>Accounting Office</td>
-                            </tr>
-                            <tr>
-                                <td>Wednesday</td>
-                                <td>8:00 AM - 4:00 PM</td>
-                                <td>Guidance Office</td>
-                            </tr>
-                            <tr>
-                                <td>Thursday</td>
-                                <td>8:00 AM - 4:00 PM</td>
-                                <td>Principal's Office</td>
-                            </tr>
-                            <tr>
-                                <td>Friday</td>
-                                <td>8:00 AM - 4:00 PM</td>
-                                <td>Admin's Office</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="col-md-6">
-            </div>
+</div>
+    <div class="hero-section">
+  <div class="container py-5">
+    <div class="row justify-content-between align-items-center">
+
+      <div class="col-lg-6">
+        <div class="info-box p-4 shadow rounded-4">
+          <h2 class="mb-4">School Office Hours</h2>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Office</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Monday</td><td>8:00 AM - 4:00 PM</td><td>Registrar's Office</td></tr>
+              <tr><td>Tuesday</td><td>8:00 AM - 4:00 PM</td><td>Accounting Office</td></tr>
+              <tr><td>Wednesday</td><td>8:00 AM - 4:00 PM</td><td>Guidance Office</td></tr>
+              <tr><td>Thursday</td><td>8:00 AM - 4:00 PM</td><td>Principal's Office</td></tr>
+              <tr><td>Friday</td><td>8:00 AM - 4:00 PM</td><td>Admin's Office</td></tr>
+            </tbody>
+          </table>
         </div>
+      </div>
+
+      
+    <div class="col-lg-6">
+      <div class="info-box p-4 shadow rounded-4">
+        <h2 class="text-center mb-4">Enroll Now</h2>
+
+        <form>
+        <div class="mb-3">
+          <label class="form-label">Student Name</label>
+          <input type="text" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Age</label>
+          <input type="number" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Gender</label>
+          <select class="form-select" required>
+            <option selected disabled>Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Parent Email</label>
+          <input type="email" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Course</label>
+          <select class="form-select" required>
+            <option selected disabled>Select a Course</option>
+            <option value="montessori">Montessori Program</option>
+            <option value="advanced">Advanced Studies</option>
+            <option value="beginner">Beginner Program</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Phone Number</label>
+          <input type="tel" class="form-control" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">Submit Enrollment</button>
+        </form>
+      </div>
     </div>
-<div class="container mt-3">
-    <form style="background-color: white; padding: 20px; border-radius: 10px; float: inline-end; width: 50%;">
-        <h2 style="text-align: center;">Enroll Now</h2>
-        <div class="mb-3">
-            <label for="studentName" class="form-label">Student Name</label>
-            <input type="text" class="form-control" id="studentName" required>
         </div>
-        <div class="mb-3">
-            <label for="age" class="form-label">Age</label>
-            <input type="number" class="form-control" id="age" required>
+          </form>
         </div>
-        <div class="mb-3">
-            <label for="parentEmail" class="form-label">Parent Email</label>
-            <input type="email" class="form-control" id="parentEmail" required>
-        </div>
-        <div class="mb-3">
-            <label for="feedback" class="form-label">Feedback/Description</label>
-            <textarea class="form-control" id="feedback" rows="3" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary" >Submit</button>
-    </form>
+      </div>
+
+    </div>
+  </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
